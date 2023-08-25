@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    aaa
+    .
   </div>
     HOME
 </template>
