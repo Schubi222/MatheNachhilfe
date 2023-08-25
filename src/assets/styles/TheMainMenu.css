@@ -1,0 +1,70 @@
+.The-Main-Menu-Wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background: #f8f9fe;
+  border-bottom: 1px solid #e7eaef;
+}
+
+.Logo-Wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.Logo-Wrapper:hover * {
+  color: #0052fe;
+  filter: drop-shadow(1px 1px 15px #f7f7f7);
+}
+.Logo-Wrapper * {
+  color: #3274ff;
+  filter: drop-shadow(1px 1px 15px white);
+  transition: 0.4s all;
+}
+.Logo-Wrapper .fa-calculator {
+  rotate: 30deg;
+  width: 30px;
+}
+.Logo-Wrapper__logo {
+  width: 70px;
+  height: 100%;
+}
+.Logo-Wrapper__text {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+.Account {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.Main-Menu {
+  display: flex;
+  gap: 20px;
+}
+.Main-Menu__entry {
+  font-size: 2rem;
+  transition: all 0.4s;
+  padding: 10px;
+  border-radius: 15px;
+}
+.Main-Menu__entry:hover {
+  color: #3274ff;
+  background: rgba(50, 116, 255, 0.1);
+  box-shadow: 2px 2px 2px 2px rgba(50, 116, 255, 0.3);
+}
+
+/*# sourceMappingURL=TheMainMenu.css.map */

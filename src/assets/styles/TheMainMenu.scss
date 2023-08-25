@@ -1,0 +1,68 @@
+@use "Variables";
+.The-Main-Menu-Wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background: #f8f9fe;
+  border-bottom: 1px solid #e7eaef;
+}
+.Logo-Wrapper{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  &:hover *{
+    color: darken(Variables.$primary-blue, 10%);
+    filter: drop-shadow(1px 1px 15px darken(white,3%));
+  }
+  *{
+    color: Variables.$primary-blue;
+    filter: drop-shadow(1px 1px 15px white);
+    transition: .4s all;
+  }
+  .fa-calculator{
+    rotate: 30deg;
+    width: 30px;
+  }
+  &__logo{
+    width: 70px;
+    height: 100%;
+  }
+  &__text{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 0.9;
+  }
+}
+.Account{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.Main-Menu{
+  display: flex;
+  gap: 20px;
+  &__entry{
+    font-size: 2rem;
+    transition: all .4s;
+    padding: 10px;
+    border-radius: 15px;
+    &:hover{
+      color: Variables.$primary-blue;
+      background: transparentize(Variables.$primary-blue, .9);
+
+      box-shadow: 2px 2px 2px 2px transparentize(Variables.$primary-blue, .7);
+    }
+  }
+}

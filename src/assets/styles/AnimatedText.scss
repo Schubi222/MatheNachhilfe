@@ -1,0 +1,21 @@
+@use "Variables";
+
+.animated-text{
+  &:hover{
+    background: -webkit-linear-gradient(180deg, transparentize(red, 0.7) 70%, Variables.$primary-blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1s ease-in-out 1 forwards;
+  }
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
